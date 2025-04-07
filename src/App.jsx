@@ -28,17 +28,15 @@ import RealEstateAttorney2 from "./Pages/RealEstateAttorney/RealEstateAttorney2"
 import AppraisalCompany2 from "./Pages/AppraisalCompany/AppraisalCompany2";
 import SurveyorCompany2 from "./Pages/SurveyorCompany/SurveyorCompany2";
 import Admin from './Admin/Admin'
-import MyProvider from "./Context/Context";
 
 export default function App() {
   return (
-    <MyProvider>
-    <Router>
+    <>
       <ToastContainer position="top-right" autoClose={3000} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/use-ful-links" element={<UseFulLinks/>} />
-        <Route path="/use-ful-links/:id" element={<UseFulLinks2/>} />
+        <Route path="/use-ful-links" element={<UseFulLinks />} />
+        <Route path="/use-ful-links/:id" element={<UseFulLinks2 />} />
         <Route path="/ForgetPassword" element={<ForgetPassword />} />
         <Route path="/Listing" element={<Listing />} />
         <Route path="/Newpassword" element={<NewPassword />} />
@@ -47,9 +45,9 @@ export default function App() {
         <Route path="/verification" element={<Verification />} />
         <Route path="/ListingDetails" element={<ListingDetails />} />
         <Route path="/ListingProfile" element={
-          
-         <PrivateRoute><ListingProfile /></PrivateRoute>} />
-        <Route path="/Business/TitleAbstractor" element={<TitleAbstractor />} />     
+
+          <PrivateRoute><ListingProfile /></PrivateRoute>} />
+        <Route path="/Business/TitleAbstractor" element={<TitleAbstractor />} />
         <Route path="/Business/TitleCompany" element={<TitleCompany2 />} />
         <Route path="/Business/RealEstateAgent" element={<RealEstateAgent2 />} />
         <Route
@@ -61,15 +59,14 @@ export default function App() {
           path="/Business/AppraisalCompany"
           element={<AppraisalCompany2 />}
         />
-        <Route path="/contact-us" element={<ContactUs/>}/>
-        <Route path="/terms-conditions" element={<TermsAndConditions/>}/> 
-        <Route path="/privacy-policy" element={<PrivacyPolicy/>}/> 
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/terms-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route
-            path="/admin/*"
-            element={<Admin />}
-          />
+          path="/admin/*"
+          element={<Admin />}
+        />
       </Routes>
-    </Router>
-    </MyProvider>
+    </>
   );
 }
