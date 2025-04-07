@@ -9,7 +9,7 @@ export const MyProvider = ({ children }) => {
   const [values, setValues] = useState([25000, 75000]);
   const [state, setState] = useState([]);
   const [county, setCounty] = useState([]);
-  const [sorts, setSorts] = useState();
+  const [sorts, setSorts] = useState('');
   return (
     <MyContext.Provider value={{ search, setSearch,selectside,setSelectside,zipcode,setZipcode,values ,setValues,state,setState,county,setCounty,sorts, setSorts}}>
       {children}
