@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ --primary-color : #1079e0;
+  --white-color: #ffffff;
+  --font-primary: "Red Rose", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+  --lable:#020C16;
+}
+body {
+  font-family: var(--font-secondary);
+}
+.scroll::-webkit-scrollbar{
+  display: none;
+}
+
+.rc-slider-dot {
+  display: none !important; /* Hides dots */
+}
+.rc-slider-mark-text {
+  position: absolute;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-align: center;
+  left: 50%;
+  margin-top: 3px; 
+  transform: translateX(-50%);
+  
+}
+
+.rc-slider-mark-text::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Adjusts the line position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 7px;
+
+  background-color: #A0A0A0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
+
+.shadoww{
+  box-shadow: 0 2px 10px 1px rgb(155, 155, 155);
+}
