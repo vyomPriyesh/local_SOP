@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const MyContext = createContext(); // ✅ Ensure Context is Created
 
-export const MyProvider = ({ children }) => {
+ const MyProvider = ({ children }) => {
   const [search, setSearch] = useState(null);
   const [selectside, setSelectside] = useState([]);
   const [zipcode, setZipcode] = useState(null);
@@ -21,3 +21,5 @@ export const MyProvider = ({ children }) => {
 export const useMyContext = () => {
   return useContext(MyContext);
 };
+
+export default MyProvider;
