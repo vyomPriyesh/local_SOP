@@ -16,7 +16,6 @@ import RealEstateAttorney from "./Pages/RealEstateAttorney/RealEstateAttorney";
 import RealEstateAgent from "./Pages/RealEstateAgent/RealEstateAgent";
 import AppraisalCompany from "./Pages/AppraisalCompany/AppraisalCompany";
 import SurveyorCompany from "./Pages/SurveyorCompany/SurveyorCompany";
-import { MyProvider } from "./Context/Context";
 import UseFulLinks from "./Pages/UseFulLinks/UseFulLinksStates";
 import UseFulLinks2 from "./Pages/UseFulLinks/UseFulLinksCounty";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
@@ -29,6 +28,7 @@ import RealEstateAttorney2 from "./Pages/RealEstateAttorney/RealEstateAttorney2"
 import AppraisalCompany2 from "./Pages/AppraisalCompany/AppraisalCompany2";
 import SurveyorCompany2 from "./Pages/SurveyorCompany/SurveyorCompany2";
 import Admin from './Admin/Admin'
+import MyProvider from "./Context/Context";
 
 export default function App() {
   return (
